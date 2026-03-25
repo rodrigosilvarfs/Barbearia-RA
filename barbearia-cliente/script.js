@@ -210,13 +210,13 @@ if (btnRAAssinar) {
 const dataInput = document.getElementById('data');
 const horaSelect = document.getElementById('hora');
 
-// >>> horários fixos 09:00–18:00 de 1 em 1 hora
+// >>> horários fixos 08:00–18:00 de 30 em 30 minutos
 const MAPA_FIM_EXPEDIENTE = {
-    'Rodrigo': '18:30',
-    'Melqui': '17:30'
+    'Rodrigo': '18:00',
+    'Melqui': '18:00'
 };
-// AJUSTE: passo de 60 min e janela 09:00–18:00
-function gerarIntervalos(inicio = '09:00', fim = '18:00', passoMin = 60) {
+// AJUSTE: passo de 30 min e janela 08:00–18:00
+function gerarIntervalos(inicio = '08:00', fim = '18:00', passoMin = 30) {
     const out = [];
     let [h, m] = inicio.split(':').map(Number);
     const [hF, mF] = fim.split(':').map(Number);
@@ -228,7 +228,7 @@ function gerarIntervalos(inicio = '09:00', fim = '18:00', passoMin = 60) {
     return out;
 }
 function fillHorasForProf(/* prof */) {
-    const lista = gerarIntervalos('09:00', '18:00', 60); // 09 → 18 de 1h em 1h
+    const lista = gerarIntervalos('08:00', '18:00', 30); // 08 → 18 de 30 min em 30 min
     horaSelect.innerHTML = `<option value="">Selecione um horário</option>` +
         lista.map(h => `<option>${h}</option>`).join('');
 }
