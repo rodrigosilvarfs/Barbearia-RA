@@ -15,7 +15,7 @@ Barbearia-RA-ADM
 <div align="center">
   <br>
   <p>Clique abaixo para acessar o Deploy:</p>
-<a href="https://rodrigosilvarfs.github.io/barbearia-adm/" target="_blank"><img src="https://img.shields.io/website-up-down-green-red/http/cv.lbesson.qc.to.svg"></a>
+<a href="https://rodrigosilvarfs.github.io/barbearia-administrador/" target="_blank"><img src="https://img.shields.io/website-up-down-green-red/http/cv.lbesson.qc.to.svg"></a>
 </div>
 
 
